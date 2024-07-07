@@ -307,7 +307,8 @@ span{
 }
 .timeline-content h3{
   font-size: 20px;
-  color: white;
+  color: var(--main-color);
+  text-decoration: underline;
   margin: 0 0 10px;
   font-weight: 500;
 }
@@ -337,13 +338,13 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20rem;
+    gap: 10rem;
     padding: 100px 15px;
     background-color: var(--bg-color);
 }
 .service-box {
     background-color: var(--second-bg-color);
-    padding: 30px 20px;
+    padding: 25px 15px;
     border-radius: 4rem;
     border-color: var(--bg-color);
     box-shadow: 0 0 25px var(--main-color);
@@ -351,35 +352,36 @@ span{
     transition: 0.3s ease-in-out;
     width: 350px;
     text-align: center;
-    height: 400px; /* Adjust the height as desired */
+    height: 350px; /* Adjust the height as desired */
 }
 .service-left {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10rem;
+    gap: 9rem;
 }
 .service-right {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10rem;
+    gap: 9rem;
 }
 .service-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
 .service-container h4 {
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: var(--main-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
+    text-decoration: underline;
 }
 .service-container p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
-    font-weight: 300;
+    font-weight: 290;
     line-height: 25px;
 }
 @media screen and (max-width: 768px) {
@@ -429,21 +431,22 @@ span{
     max-width: 450px;
     background: var(--bg-color);
     border: 3px solid var(--main-color);
-    border-radius: 2rem;
+    border-radius: 4rem;
     margin: 0 2rem;
-    padding: 30px 60px;
+    padding: 30px 50px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 1.5rem;
+    gap: 1rem;
     color: white;
     transition: 0.4s ease-in-out;
 }
 .skill-item h2{
     color: var(--main-color);
+    text-decoration: underline var(--main-color);
 }
 .skill-item:hover{
     border: 3px solid var(--main-color);
@@ -612,8 +615,8 @@ span{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 50%;
-        padding: 0.5rem 8%;
+        width: 40%;
+        height: 200px;
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 5rem;
@@ -633,7 +636,7 @@ span{
         display: flex;
         flex-direction: column;
         gap: 2rem; /* Example gap between items */
-        padding: 1rem; /* Example padding */
+        padding: 0rem; /* Example padding */
     }
 
     .navbar a:hover, .navbar a.active {
@@ -647,7 +650,7 @@ span{
         font-size: 2rem;
         padding: 0.5rem; /* Example padding */
         width: 100%; /* Example width */
-        text-align: right; /* Example align right */
+        text-align: left; /* Example align right */
     }
 
     /* Add space between cross and menu items */
