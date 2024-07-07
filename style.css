@@ -349,9 +349,9 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    width: 500px;
+    width: 350px;
     text-align: center;
-    height: 300px; /* Adjust the height as desired */
+    height: 400px; /* Adjust the height as desired */
 }
 .service-left {
     display: flex;
@@ -372,7 +372,7 @@ span{
     box-shadow: 0 0 25px var(--main-color);
 }
 .service-container h4 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--main-color);
     margin-bottom: 1rem;
 }
@@ -412,12 +412,12 @@ span{
     
 }
 .skill-box img{
-    width: 10rem;
+    width: 5rem;
     border: none;
     border-radius: 2rem;
     box-shadow: 0 0 35px var(--main-color);
     cursor: pointer;
-    width: 300px;
+    width: 250px;
     
 }
 .wrapper{
@@ -441,6 +441,9 @@ span{
     gap: 1.5rem;
     color: white;
     transition: 0.4s ease-in-out;
+}
+.skill-item h2{
+    color: var(--main-color);
 }
 .skill-item:hover{
     border: 3px solid var(--main-color);
@@ -598,62 +601,91 @@ span{
         padding: 2rem 3%;
     }
 }
-@media(max-width:600px){
-    #menu-icon{
+@media (max-width: 895px) {
+    /* Base styles for the navbar */
+    #menu-icon {
         display: block;
-        visibility: visible; /* Add this line to make the creos icon visible */
+        visibility: visible;
     }
+
     .navbar {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 80%;
-        height: 100%;
-        background: transparent;
-        backdrop-filter: blur(10px);
-        transition: 0.5s ease;
-        z-index: 1000;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 0.5rem 8%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 5rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+        
+    }
+
+    /* Show the navbar when active */
+        .navbar.active {
+        display: block;
+    }
+
+    /* Container for menu items */
+    .navbar-menu {
         display: flex;
-        flex-direction: column; /* Change flex-direction to column */
-        align-items: end; /* Add this line to center the items */
+        flex-direction: column;
+        gap: 2rem; /* Example gap between items */
+        padding: 1rem; /* Example padding */
     }
 
-    .navbar.active {
-        left: 0;
+    .navbar a:hover, .navbar a.active {
+        color: var(--main-color);
+        border-bottom: 3px solid var(--main-color);
 
     }
-
+    /* Styling for menu items */
     .navbar a {
         display: block;
-        font-size: 2.5rem;
-        margin: 2rem 0;
-        gap: 2rem;
+        font-size: 2rem;
+        padding: 0.5rem; /* Example padding */
+        width: 100%; /* Example width */
+        text-align: right; /* Example align right */
     }
 
+    /* Add space between cross and menu items */
     .navbar a:first-child {
-        margin-top: 5rem; /* Add this line to create space between cross and items */
+        margin-top: 1rem;
     }
-    .home{
+
+    /* Styles for the home section */
+    .home {
+        display: flex;
         flex-direction: column-reverse;
         margin: 5rem 4rem;
     }
-    .home-content h3{
-        font-size: 2.6rem;
+
+    .home-content h3 {
+        font-size: 2rem;
     }
-    .home-content h1{
+
+    .home-content h1 {
         font-size: 8rem;
     }
-    .home-content p{
+
+    .home-content p {
         max-width: 600px;
         margin: 0 auto;
     }
-    .home-img img{
+
+    .home-img img {
         width: 56vw;
     }
-    .service h2{
+
+    /* Styling for the services section */
+    .service h2 {
         margin-bottom: 3rem;
     }
-    .service-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .service-container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
