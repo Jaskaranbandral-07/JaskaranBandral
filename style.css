@@ -370,7 +370,7 @@ span{
 }
 .service-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 35px var(--main-color);
 }
 .service-container h4 {
     font-size: 2.6rem;
@@ -615,10 +615,10 @@ span{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 40%;
-        height: 200px;
+        width: 50%;
+        height: 1000px;
         background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(10px);
         border-bottom-left-radius: 5rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
@@ -636,7 +636,7 @@ span{
         display: flex;
         flex-direction: column;
         gap: 2rem; /* Example gap between items */
-        padding: 0rem; /* Example padding */
+        padding: 2rem; /* Example padding */
     }
 
     .navbar a:hover, .navbar a.active {
@@ -648,7 +648,7 @@ span{
     .navbar a {
         display: block;
         font-size: 2rem;
-        padding: 0.5rem; /* Example padding */
+        padding: 2rem; /* Example padding */
         width: 100%; /* Example width */
         text-align: left; /* Example align right */
     }
